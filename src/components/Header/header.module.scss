@@ -1,0 +1,15 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 50px;
+	.logo {
+		max-width: 200px;
+		display: block;
+		margin-bottom: 30px;
+	}
+	h1 {
+		font-size: 40px;
+		font-weight: 600;
+	}
+}

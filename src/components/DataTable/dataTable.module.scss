@@ -1,0 +1,45 @@
+.inner {
+	width: 1100px;
+	margin: 0 auto;
+	padding-top: 30px;
+
+	table {
+		table-layout: fixed;
+		width: 100%;
+		margin-bottom: 40px;
+		font-size: 18px;
+		border: 2px solid #000;
+	}
+	.draggable {
+		display: table;
+	}
+	thead {
+		border-bottom: 2px solid #000;
+	}
+	th {
+		font-size: 20px;
+		padding: 4px 10px;
+	}
+	tr {
+		display: grid;
+		align-items: center;
+		grid-template-columns: repeat(4, 1fr);
+		padding: 4px 0;
+		text-align: left;
+		&:nth-child(even) {
+			background-color: rgb(174, 174, 174);
+		}
+		&:nth-child(odd) {
+			background-color: #ffffff;
+		}
+		&:nth-last-child(1) {
+			border-bottom: none;
+		}
+	}
+	td {
+		max-width: 220px;
+		&:nth-child(1) {
+			margin-left: 10px;
+		}
+	}
+}
